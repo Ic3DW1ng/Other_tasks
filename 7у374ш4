@@ -1,0 +1,107 @@
+int number; // объявление переменной без значения
+int number = 5; // объявление переменной со значением
+number = 10; // присваивание (изменение) значения переменной
+Debug.Log(number); // вывод переменной на консоль
+int number = 5;
+Debug.Log(number);
+number = 10;
+Debug.Log(number);
+int number = 5;
+Debug.Log("Значение переменной: " + number);
+uint number = 5;
+Debug.Log(number);
+// Примечание: uint не может хранить отрицательные значения
+byte score = 255; 
+short level = 32767;
+long gold = 9000000000000000000L;
+float speed = 5.5f;
+double distance = 10.555555;
+string playerName = "Gamer";
+char category = 'A';
+bool isAlive = true;
+
+
+
+
+
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        // 1. Объявление переменных со всеми типами данных из работы
+        int myInt = 10;            // Целое число
+        uint myUint = 20;          // Целое положительное число
+        byte myByte = 255;         // Число от 0 до 255
+        short myShort = 32767;     // Целое число до 32767
+        long myLong = 9000000000L; // 64-битное целое число
+        float myFloat = 5.5f;      // Число с плавающей точкой
+        double myDouble = 10.99;   // Число с двойной точностью
+        string myString = "Hello"; // Строка текста
+        char myChar = 'A';         // Отдельный символ
+        bool myBool = true;        // Булево значение
+
+        // 2. Присваивание переменным новых значений
+        myInt = -50;
+        myUint = 100; // Тип uint не поддерживает отрицательные значения
+        myByte = 10;
+        myShort = 1000;
+        myLong = 123456789L;
+        myFloat = 12.3f;
+        myDouble = 99.
+
+
+
+
+
+
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        // 1. Объявление переменных со всеми типами данных из работы
+        int myInt = 10;            // Целое число
+        uint myUint = 20;          // Целое положительное число
+        byte myByte = 255;         // Число от 0 до 255
+        short myShort = 32767;     // Целое число до 32767
+        long myLong = 9000000000L; // 64-битное целое число
+        float myFloat = 5.5f;      // Число с плавающей точкой
+        double myDouble = 10.99;   // Число с двойной точностью
+        string myString = "Hello"; // Строка текста
+        char myChar = 'A';         // Отдельный символ
+        bool myBool = true;        // Булево значение
+
+        // 2. Присваивание переменным новых значений
+        myInt = -50;
+        myUint = 100; // Тип uint не может принимать отрицательные значения
+        myByte = 10;
+        myShort = 1000;
+        myLong = 123456789L;
+        myFloat = 12.3f;
+        myDouble = 99.99;
+        myString = "Unity C#";
+        myChar = 'B';
+        myBool = false;
+
+        // 3. Вывод всех переменных на консоль
+        Console.WriteLine("Значение int: " + myInt);
+        Console.WriteLine("Значение uint: " + myUint);
+        Console.WriteLine("Значение byte: " + myByte);
+        Console.WriteLine("Значение short: " + myShort);
+        Console.WriteLine("Значение long: " + myLong);
+        Console.WriteLine("Значение float: " + myFloat);
+        Console.WriteLine("Значение double: " + myDouble);
+        Console.WriteLine("Текст: " + myString);
+        Console.WriteLine("Символ: " + myChar);
+        Console.WriteLine("Логическое значение: " + myBool);
+        
+        // Практика использования ReadLine и преобразования (Часть 3)
+        Console.WriteLine("Введите число:");
+        string input = Console.ReadLine(); // Чтение строки
+        int convertedInt = Convert.ToInt32(input); // Преобразование строки в int
+        Console.WriteLine("Результат: " + convertedInt);
+    }
+}
